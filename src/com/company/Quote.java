@@ -1,6 +1,7 @@
 package com.company;
 
 public class Quote {
+
     private String website;
     private float price;
 

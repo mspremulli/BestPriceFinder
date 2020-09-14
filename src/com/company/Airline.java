@@ -4,7 +4,12 @@ import java.util.Random;
 import java.util.concurrent.CompletableFuture;
 
 public class Airline {
-    public CompletableFuture<Quote> getQuote(String website){
+    private String website;
+
+    public void setWebsite(String website) {
+        this.website = website;
+    }
+    public CompletableFuture<Quote> getQuote(){
         return CompletableFuture.supplyAsync(() -> {
 
             float price = 100 + new Random().nextFloat();
