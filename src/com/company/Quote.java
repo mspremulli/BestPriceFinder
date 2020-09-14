@@ -17,8 +17,8 @@ public class Quote {
         return price;
     }
 
-    public void printQuote(){
-        System.out.println("Quote{site="+ getWebsite() + ", price:" + getPrice() + "}");
+    public String getQuote(){
+        return "Quote{site="+ getWebsite() + ", price:" + getPrice() + "}";
     }
 
 }
